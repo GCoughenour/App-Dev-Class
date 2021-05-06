@@ -1,0 +1,72 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Food Item Macros
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Welcome to Food Macros!</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      This app is meant for people curious about the nutritional facts of every day food and drink items.
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-list>
+    <h2>Beverages</h2>
+    <ion-item>Beer:
+      <ion-item>Carbs: {{Beverages.Beer.Carbs}}</ion-item>
+      <ion-item>Protein: {{Beverages.Beer.Protein}}</ion-item>
+      <ion-item>Serving Size: {{Beverages.Beer.ServingSize}}</ion-item>
+    </ion-item>
+    <ion-item>Apple Cider:
+      <ion-item>Carbs: {{Beverages["Apple cider"].Carbs}}</ion-item>
+      <ion-item>Protein: {{Beverages["Apple cider"].Protein}}</ion-item>
+      <ion-item>Serving Size: {{Beverages["Apple cider"].ServingSize}}</ion-item>
+    </ion-item>
+    <ion-item>Milk (1%):
+      <ion-item>Carbs: {{Beverages["Milk (1%)"].Carbs}}</ion-item>
+      <ion-item>Protein: {{Beverages["Milk (1%)"].Protein}}</ion-item>
+      <ion-item>Serving Size: {{Beverages["Milk (1%)"].ServingSize}}</ion-item>
+    </ion-item>
+    <h2>Fruits</h2>
+    <ion-item>Apple:
+      <ion-item>Carbs: {{Fruits.Apple.Carbs}}</ion-item>
+      <ion-item>Protein: {{Fruits.Apple.Protein}}</ion-item>
+      <ion-item>Serving Size: {{Fruits.Apple.ServingSize}}</ion-item>
+    </ion-item>
+    <ion-item>Banana:
+      <ion-item>Carbs: {{Fruits.Banana.Carbs}}</ion-item>
+      <ion-item>Protein: {{Fruits.Banana.Protein}}</ion-item>
+      <ion-item>Serving Size: {{Fruits.Banana.ServingSize}}</ion-item>
+    </ion-item>
+    <ion-item>Grapes:
+      <ion-item>Carbs: {{Fruits.Grapes.Carbs}}</ion-item>
+      <ion-item>Protein: {{Fruits.Grapes.Protein}}</ion-item>
+      <ion-item>Serving Size: {{Fruits.Grapes.ServingSize}}</ion-item>
+    </ion-item>
+    <h1>Proteins</h1>
+    <ion-item>Beef:
+      <ion-item>Carbs: {{Proteins["Beef, regular, cooked"].Carbs}}</ion-item>
+      <ion-item>Protein: {{Proteins["Beef, regular, cooked"].Protein}}</ion-item>
+      <ion-item>Serving Size: {{Proteins["Beef, regular, cooked"].ServingSize}}</ion-item>
+    </ion-item>
+    <ion-item>Chicken:
+      <ion-item>Carbs: {{Proteins["Chicken, cooked"].Carbs}}</ion-item>
+      <ion-item>Protein: {{Proteins["Chicken, cooked"].Protein}}</ion-item>
+      <ion-item>Serving Size: {{Proteins["Chicken, cooked"].ServingSize}}</ion-item>
+    </ion-item>
+    <ion-item>Egg:
+      <ion-item>Carbs: {{Proteins.Egg.Carbs}}</ion-item>
+      <ion-item>Protein: {{Proteins.Egg.Protein}}</ion-item>
+      <ion-item>Serving Size: {{Proteins.Egg.ServingSize}}</ion-item>
+    </ion-item>
+  </ion-list>
+    
+  
+</ion-content>

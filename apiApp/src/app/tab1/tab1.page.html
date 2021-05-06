@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Chuck Norris Facts
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-img src= "{{icon_url}}" class = "chucknorris-icon"></ion-img>
+  <p>
+    {{ joke }}
+  </p>
+  <ion-button expand = "full" color = "danger" (click) = "newJoke()">
+    New Joke
+  </ion-button>
+</ion-content>

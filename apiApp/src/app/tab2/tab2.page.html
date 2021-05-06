@@ -1,0 +1,12 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      {{ city }}, {{ state }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-img src = "{{ icon }} "></ion-img>
+  <h1>{{temp}} &deg;F - {{description}} </h1>
+</ion-content>
