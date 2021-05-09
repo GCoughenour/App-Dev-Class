@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor = "let lift of lifts; let i = index" (click) = "changeWeight()">
+      <ion-text>{{lifts[i].name}}</ion-text>
+      <ion-item>{{lifts[i].sets}} sets</ion-item>
+      <ion-item>{{lifts[i].reps}} reps</ion-item>
+      <ion-item>{{lifts[i].weight}}lbs</ion-item>
+    </ion-item>
+  </ion-list>
+  <ion-button expand = "full" (click)="newLift()">New Lift</ion-button>
+</ion-content>
